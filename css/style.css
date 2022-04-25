@@ -84,6 +84,7 @@ body {
 }
 
 .form__title {
+    margin-top: 3rem;
     margin-bottom: 1.5rem;
 }
 
@@ -139,3 +140,64 @@ body {
     background-color: orange;
     transition: 0.3s;
 }
+
+
+/**************************
+*** SERVICE DESCRIPTION ***
+**************************/
+
+.description__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 4rem;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.item__icon img {
+    width: 70px;
+    height: 70px;
+}
+
+
+.item__desc1, .item__desc2, .item__desc3 {
+    display: flex;
+    gap: 4rem;
+}
+
+.item__description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .description__wrapper {
+        width: 80%;
+    }
+    .item__icon img {
+        width: 60px;
+        height: 60px;
+    }
+    .item__desc1, .item__desc2, .item__desc3 {
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .description__wrapper {
+        width: 90%;
+    }
+    .item__icon img {
+        width: 60px;
+        height: 60px;
+    }
+    .item__desc1, .item__desc2, .item__desc3 {
+        gap: 1rem;
+    }
+}
+
+/********************
+*** IMAGE SECTION ***
+********************/

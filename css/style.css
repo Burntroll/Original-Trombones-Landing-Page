@@ -24,6 +24,7 @@ body {
     background-color: rgb(223, 136, 136);
     position: fixed;
     top: 0;
+    z-index: 30;
 }
 
 #header-img {
@@ -212,4 +213,102 @@ body {
     display: flex;
     margin-top: 4rem;
     margin-bottom: 4rem;
+}
+
+/********************
+*** PRICE SECTION ***
+********************/
+
+.prices__wrapper {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+
+.price__item {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 100%;
+    padding-bottom: 1rem;
+}
+
+.price__title {
+    display: flex;
+    padding: 0.7rem 0 0.7rem 0;
+    width: 100%;
+    justify-content: center;
+    background-color: #ddd;
+}
+
+.prices__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 10rem;
+    align-items: center;
+    align-self: center;
+}
+
+.price__value {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.price__desc {
+    line-height: 2.0rem;
+    width: 100%;
+    position: relative;
+    left: 20px;
+}
+
+.price__btn {
+    background-color: rgb(248, 195, 20);
+    padding: 0.6rem 1.2rem;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+.price__btn:hover {
+    background-color: orange;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 622px) {
+    .price__title {
+        font-size: 16px;
+    }
+    .price__value {
+        font-size: 20px;
+    }
+    .price__desc {
+        left: 0;
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .prices__wrapper {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 2rem;
+    }
+    .price__title {
+        font-size: 26px;
+    }
+    .price__value {
+        font-size: 26px;
+    }
+    .price__desc {
+        left: 10;
+        padding: 0 1rem;
+    }
 }

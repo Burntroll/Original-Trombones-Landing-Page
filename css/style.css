@@ -17,11 +17,13 @@ body {
 
 #header {
     display: flex;
-    height: 100%;
+    width: 100%;
     padding: 0.5rem 0 0.5rem 0;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(223, 136, 136);
+    position: fixed;
+    top: 0;
 }
 
 #header-img {
@@ -52,7 +54,6 @@ body {
 @media only screen and (max-width: 530px) {
     #header {
         flex-direction: column;
-        max-height: 100%;
     }
     #nav-bar {
         width: 80%;
@@ -61,7 +62,6 @@ body {
 }
 
 @media only screen and (max-width: 320px) {
-
     #nav-bar {
         width: 100%;
         display: flex;
@@ -91,6 +91,7 @@ body {
 @media only screen and (max-width: 500px) {
     .form__title {
         width: 80%;
+        margin-top: 5rem;
         margin-bottom: 1rem;
     }
     .form__wrapper {
@@ -102,10 +103,10 @@ body {
 @media only screen and (max-width: 320px) {
     .form__title {
         width: 80%;
-        margin-bottom: 1rem;
+        margin-top: 9rem;
+        margin-bottom: 1.2rem;
         position: relative;
         left: 35px;
-        margin-bottom: 1.2rem;
     }
 }
 
@@ -199,5 +200,16 @@ body {
 }
 
 /********************
-*** IMAGE SECTION ***
+*** VIDEO SECTION ***
 ********************/
+
+#video {
+    display: flex;
+    margin: auto;
+}
+
+.imagebox {
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}

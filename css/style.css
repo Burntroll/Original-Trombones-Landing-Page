@@ -72,3 +72,70 @@ body {
     }
 }
 
+/*******************
+*** HERO SECTION ***
+*******************/
+
+.form__wrapper {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__title {
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .form__title {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    .form__wrapper {
+        margin-top: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .form__title {
+        width: 80%;
+        margin-bottom: 1rem;
+        position: relative;
+        left: 35px;
+        margin-bottom: 1.2rem;
+    }
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#email {
+    margin-bottom: 0.8rem;
+    min-width: 14rem;
+    width: 100%;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 800;
+    max-height: 40px;
+    max-width: 160px;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    background-color: #f1c40f;
+    cursor: pointer;
+    border-radius: 6px;
+    align-self: center;
+    border: lightcoral 0.1rem solid;
+}
+
+.btn:hover {
+    background-color: orange;
+    transition: 0.3s;
+}
